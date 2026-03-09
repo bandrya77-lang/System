@@ -9,7 +9,7 @@ const https = require('https');
 
 const CLIENT_ID     = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const REDIRECT_URI  = process.env.QAUTH_LINK || 'http://localhost:2000/auth/discord/redirect';
+const REDIRECT_URI  = process.env.QAUTH_LINK || 'https://system-production-52b0.up.railway.app/auth/discord/redirect';
 
 const SCOPES = ['identify', 'email', 'guilds'].join('%20');
 
