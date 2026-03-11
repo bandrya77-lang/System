@@ -52,7 +52,7 @@ function resolve(guildId) {
     }
 
     return {
-        PREFIX: guildData.PREFIX ?? global.PREFIX ?? DEFAULTS.PREFIX,
+     PREFIX: guildData.PREFIX ?? guildData.COMMANDS?.PREFIX ?? global.PREFIX ?? DEFAULTS.PREFIX,
         COMMANDS: {
             ...DEFAULTS.COMMANDS,
             ...(global.COMMANDS || {}),
