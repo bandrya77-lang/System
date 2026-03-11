@@ -1,6 +1,6 @@
 {
     "system": {
-        "PREFIX": null,
+        "PREFIX": "!",
         "COMMANDS": {
             "ENABLE_PREFIX": true,
             "ENABLE_SLASH_COMMANDS": true,
