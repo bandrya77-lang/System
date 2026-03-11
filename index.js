@@ -229,7 +229,7 @@ client.on('messageCreate', async (message) => {
 
     if (!sysCfg.COMMANDS.ENABLE_PREFIX) return;
 
-  const prefix = sysCfg.PREFIX || sysCfg.COMMANDS?.PREFIX || '!';
+const prefix = sysCfg.PREFIX || '!';
     if (!message.content.startsWith(prefix)) return;
 
     const args        = message.content.slice(prefix.length).trim().split(/ +/);
