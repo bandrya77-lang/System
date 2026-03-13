@@ -15,7 +15,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --bg: #040010; --surface: rgba(255,255,255,.04); --surface-2: rgba(255,255,255,.07);
-      --card: rgba(10,3,30,.78); --purple: #7c3aed; --purple-l: #a78bfa;
+      --card: rgba(0 ,0 ,0,.78); --purple: #7c3aed; --purple-l: #a78bfa;
       --cyan: #06b6d4; --cyan-l: #67e8f9; --gold: #d97706; --gold-l: #fcd34d;
       --green: #22c55e; --red: #ef4444; --orange: #f97316; --yellow: #eab308;
       --border: rgba(255, 0, 0,.2); --border-h: rgba(255, 0, 0,.5);
@@ -441,7 +441,7 @@
     .prof-badge { display:flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:9px; background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.08); position:relative; cursor:default; transition:transform .15s,background .15s,box-shadow .15s; }
     .prof-badge:hover { transform:translateY(-2px) scale(1.08); background:rgba(255,255,255,.09); box-shadow:0 4px 14px rgba(0,0,0,.4); }
     .prof-badge img { width:20px; height:20px; object-fit:contain; }
-    .prof-badge-tip { position:absolute; bottom:calc(100% + 8px); left:50%; transform:translateX(-50%); background:rgba(10,3,30,.97); border:1px solid rgba(255, 0, 0,.3); border-radius:7px; padding:5px 10px; font-size:.65rem; white-space:nowrap; color:var(--white); opacity:0; pointer-events:none; transition:opacity .15s; z-index:10; box-shadow:0 4px 16px rgba(0,0,0,.5); }
+    .prof-badge-tip { position:absolute; bottom:calc(100% + 8px); left:50%; transform:translateX(-50%); background:rgba(0 ,0 ,0,.97); border:1px solid rgba(255, 0, 0,.3); border-radius:7px; padding:5px 10px; font-size:.65rem; white-space:nowrap; color:var(--white); opacity:0; pointer-events:none; transition:opacity .15s; z-index:10; box-shadow:0 4px 16px rgba(0,0,0,.5); }
     .prof-badge:hover .prof-badge-tip { opacity:1; }
     .prof-footer { padding:14px 20px; border-top:1px solid rgba(255,255,255,.06); display:flex; flex-direction:column; gap:8px; }
     .prof-btn { display:flex; align-items:center; gap:10px; padding:10px 14px; border-radius:10px; font-size:.82rem; font-weight:600; text-decoration:none; cursor:pointer; border:1px solid transparent; transition:background .18s,border-color .18s,transform .12s; font-family:inherit; }
@@ -1138,7 +1138,7 @@
   <div class="toast" id="toast"></div>
 
   <!-- Page in overlay -->
-  <div id="ov" style="position:fixed;inset:0;z-index:9999;background:#040010;animation:pIn .45s cubic-bezier(.4,0,.2,1) forwards;pointer-events:none;"></div>
+  <div id="ov" style="position:fixed;inset:0;z-index:9999;background:#000000;animation:pIn .45s cubic-bezier(.4,0,.2,1) forwards;pointer-events:none;"></div>
 
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script>
