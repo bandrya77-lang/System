@@ -14,10 +14,10 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --bg:       #040010;
+      --bg:       #000000;
       --surface:  rgba(255,255,255,.04);
       --surface-2:rgba(255,255,255,.07);
-      --card:     rgba(10,3,30,.75);
+      --card:     rgba(0 ,0 ,0,.75);
       --purple:   #7c3aed;
       --purple-l: #a78bfa;
       --cyan:     #06b6d4;
@@ -233,7 +233,7 @@
     /* ── Leave modal ── */
     .modal-backdrop { position:fixed; inset:0; z-index:500; background:rgba(0,0,0,.7); backdrop-filter:blur(4px); display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity .22s; }
     .modal-backdrop.open { opacity:1; pointer-events:all; }
-    .modal { background:rgba(10,3,30,.98); border:1px solid rgba(255, 0, 0,.25); border-radius:20px; padding:28px 28px 24px; width:min(460px,92vw); box-shadow:0 24px 80px rgba(0,0,0,.8); transform:translateY(16px); transition:transform .25s; }
+    .modal { background:rgba(0 ,0 ,0,.98); border:1px solid rgba(255, 0, 0,.25); border-radius:20px; padding:28px 28px 24px; width:min(460px,92vw); box-shadow:0 24px 80px rgba(0,0,0,.8); transform:translateY(16px); transition:transform .25s; }
     .modal-backdrop.open .modal { transform:translateY(0); }
     .modal-header { display:flex; align-items:center; gap:12px; margin-bottom:18px; }
     .modal-guild-icon { width:40px; height:40px; border-radius:10px; object-fit:cover; flex-shrink:0; }
